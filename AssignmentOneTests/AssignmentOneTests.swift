@@ -21,8 +21,11 @@ final class AssignmentOneTests: XCTestCase {
     func testExample() throws {
         
         let item = list().grocery
+        XCTAssertEqual(item[0], "Apple Juice")
+        XCTAssertEqual(item[1], "Eggs")
+        XCTAssertEqual(item[2], "Milk")
         XCTAssertEqual(item[3], "Bread")
-    }
+        XCTAssertEqual(item[4], "Rice")    }
 
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
