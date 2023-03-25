@@ -7,6 +7,14 @@
 
 import SwiftUI
 
+var groceries = [
+    ["Apple Juice","checkmark"],
+    ["Eggs","checkmark"],
+    ["Milk","unchecked"],
+    ["Bread","checkmark"],
+    ["Rice","unchecked"]
+    ]
+
 struct ContentView: View {
     var body: some View {
         VStack {
