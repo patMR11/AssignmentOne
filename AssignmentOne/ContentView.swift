@@ -14,19 +14,24 @@ var groceries = [
     ["Bread","checkmark"],
     ["Rice","unchecked"]
     ]
-
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationView{
+            List{
+                ForEach(groceries, id:\.self){
+                    groceries in
+                    HStack{
+                        Text(groceries[0]).font(.title2)
+                        Spacer()
+                        Image(systemName: groceries[1]).foregroundColor(.blue)
+                    }
+                    
+                }.navigationTitle("Groceries")
+            }
+            
         }
-        .padding()
     }
 }
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
