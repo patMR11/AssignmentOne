@@ -14,6 +14,8 @@
 		2927050129CEC62000C2C761 /* AssignmentOneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2927050029CEC62000C2C761 /* AssignmentOneTests.swift */; };
 		2927050B29CEC62100C2C761 /* AssignmentOneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2927050A29CEC62100C2C761 /* AssignmentOneUITests.swift */; };
 		2927050D29CEC62100C2C761 /* AssignmentOneUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2927050C29CEC62100C2C761 /* AssignmentOneUITestsLaunchTests.swift */; };
+		2927051B29CECD7900C2C761 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2927051A29CECD7900C2C761 /* DataModel.swift */; };
+		2927051C29CECDFD00C2C761 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2927051A29CECD7900C2C761 /* DataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		2927050629CEC62100C2C761 /* AssignmentOneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AssignmentOneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2927050A29CEC62100C2C761 /* AssignmentOneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentOneUITests.swift; sourceTree = "<group>"; };
 		2927050C29CEC62100C2C761 /* AssignmentOneUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentOneUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2927051929CECC2100C2C761 /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
+		2927051A29CECD7900C2C761 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,8 @@
 		292704EE29CEC61F00C2C761 /* AssignmentOne */ = {
 			isa = PBXGroup;
 			children = (
+				2927051929CECC2100C2C761 /* Readme.md */,
+				2927051A29CECD7900C2C761 /* DataModel.swift */,
 				292704EF29CEC61F00C2C761 /* AssignmentOneApp.swift */,
 				292704F129CEC61F00C2C761 /* ContentView.swift */,
 				292704F329CEC62000C2C761 /* Assets.xcassets */,
@@ -259,6 +265,7 @@
 			files = (
 				292704F229CEC61F00C2C761 /* ContentView.swift in Sources */,
 				292704F029CEC61F00C2C761 /* AssignmentOneApp.swift in Sources */,
+				2927051B29CECD7900C2C761 /* DataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2927050129CEC62000C2C761 /* AssignmentOneTests.swift in Sources */,
+				2927051C29CECDFD00C2C761 /* DataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
