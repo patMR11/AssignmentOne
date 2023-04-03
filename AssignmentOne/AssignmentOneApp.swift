@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct AssignmentOneApp: App {
+    @State var model = listDataModel()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(model: $model)
         }
     }
 }

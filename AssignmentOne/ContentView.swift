@@ -7,33 +7,35 @@
 
 import SwiftUI
 
-var groceries = [
-    ["Apple Juice","checkmark"],
-    ["Eggs","checkmark"],
-    ["Milk","unchecked"],
-    ["Bread","checkmark"],
-    ["Rice","unchecked"]
-    ]
+
 struct ContentView: View {
+    @Binding var model: listDataModel
     var body: some View {
         NavigationView{
-            List{
-                ForEach(groceries, id:\.self){
-                    groceries in
-                    HStack{
-                        Text(groceries[0]).font(.title2)
-                        Spacer()
-                        Image(systemName: groceries[1]).foregroundColor(.blue)
+            VStack{
+                //editView(title:"Checklists")
+                List{
+                    ForEach($model.checklist, id:\.self){
+                        $checklist in
+                        NavigationLink(
+                            destination: DetailView(fulltitlename: $checklist)){
+                                Text(checklist.name)
+                                
+                            }
+    
+                        
+                    }.onDelete{indecs in
+                        model.checklist.remove(atOffsets: indecs)
+                        
                     }
-                    
-                }.navigationTitle("Groceries")
-            }
+                }
+                
+            }.navigationTitle("Checklist")
+                .navigationBarItems(leading: EditButton(), trailing: Button("+"){
+                    model.checklist.append(mylist(name: "Checklist"))
+                })
             
         }
     }
-}
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
+    
 }

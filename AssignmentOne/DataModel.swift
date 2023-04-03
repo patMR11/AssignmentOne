@@ -7,6 +7,28 @@
 
 import Foundation
 
-struct list{
-    var grocery = ["Apple Juice","Eggs","Milk","Bread","Rice"]
+struct mylist: Hashable{
+    var name: String
+}
+
+struct listDataModel{
+    var checklist:[mylist]
+    init(){
+        checklist = []
+    }
+    func loadChecklist(){
+        
+    }
+    func saveChecklist(){
+        
+    }
+    
+
+}
+
+extension mylist{
+    var fullname: String{
+        return"\(name)"
+    }
+    
 }
